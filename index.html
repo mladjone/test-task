@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css">
   </head>
 
-  <body id="page" onmousemove="myFunction(event)">
+  <body id="page" onmousemove="followCursor(event)">
   
     <div class="red">
       <aside>2</aside>
@@ -28,13 +28,15 @@
       <aside>3</aside>
       <p>Type the name of one of the US countries</p>
       <input type="text" onkeyup="filter(this)" />
-      <ul id="countries"></ul>
+      <ul id="countries">
+      
+      </ul>
     </div>
     <div class="blue">
       <aside>4</aside>
       <p>Enter matrices in format: <br>[[11,12,13], [21,22,23], [31,32,33]]</p>
-      <input type="text" id="arrayA" onkeyup="CheckThis(this)" />
-      <input type="text" id="arrayB" onkeyup="CheckThat(this)" />
+      <input type="text" id="arrayA" oninput="CheckThis(this)" />
+      <input type="text" id="arrayB" oninput="CheckThat(this)" />
       <button onclick="displayMutiply()">Multiply</button>
       <textarea id="errorHolder"  readonly></textarea>
     </div>

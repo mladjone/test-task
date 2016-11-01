@@ -1,0 +1,122 @@
+body{
+	box-sizing: border-box;
+	position: relative;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+}
+div{
+	width: 50%;
+	height: 50vh;
+	float: left;
+	position: relative;
+}
+aside{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-weight: bold;
+	top: 10px;
+	left: 10px;
+	font-size: 30px;
+	border: 4px solid black;
+	border-radius: 50%;
+}
+.red{
+	background-color: red;
+	overflow-y: scroll;
+}
+.red p{
+	text-align: center;
+	color: white;
+}
+.red button{
+	display: block;
+	margin: 10px auto;
+}
+#listParent{
+
+}
+.green{
+	background-color: green;
+}
+.green p{
+	color: white;
+	text-align: center;
+}
+.green input{
+	display: block;
+	margin: 10px auto;
+}
+#countries{
+	height: 80%;
+	overflow: hidden;
+}
+.blue{
+	background-color: blue;
+}
+.blue p{
+	color: white;
+	text-align: center;
+}
+#errorHolder{
+	font-size: 18px;
+	display: block;
+	margin: 10px auto;
+}
+.blue input{
+	display: block;
+	margin: 10px auto;
+}
+.blue button{
+	display: block;
+	margin: 10px auto;
+}
+.yellow{
+	background-color: yellow;
+	position: relative;
+	overflow-y: scroll;
+}
+.yellow p{
+	text-align: center;
+}
+.yellow img{
+	position: absolute;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+
+.fadeIn{
+	animation: faddingInKitten 2s forwards;
+}
+@keyframes faddingInKitten{
+    from{
+    	opacity: 1;
+    }
+    to{
+    	opacity: 0;
+    }
+}
+.fadeOut{
+	animation: faddingOutKitten 2s forwards;
+}
+@keyframes faddingOutKitten{
+    from{
+    	opacity: 0;
+    }
+    to{
+    	opacity: 1;
+    }
+}
+
+
+#firstTask{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

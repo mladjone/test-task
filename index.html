@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test Task 31.10.16.</title>
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="main.css">
+    <!-- endbuild -->
+
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css">
+  </head>
+
+  <body id="page" onmousemove="myFunction(event)">
+  
+    <div class="red">
+      <aside>2</aside>
+      <p>Click button to displays list of items</p>
+      <button onclick="loadDoc()">Load JSON</button>
+      <ul id="listParent">
+        
+      </ul>
+    </div>
+    <div class="green">
+      <aside>3</aside>
+      <p>Type the name of one of the US countries</p>
+      <input type="text" onkeyup="filter(this)" />
+      <ul id="countries"></ul>
+    </div>
+    <div class="blue">
+      <aside>4</aside>
+      <p>Enter matrices in format: <br>[[11,12,13], [21,22,23], [31,32,33]]</p>
+      <input type="text" id="arrayA" onkeyup="CheckThis(this)" />
+      <input type="text" id="arrayB" onkeyup="CheckThat(this)" />
+      <button onclick="displayMutiply()">Multiply</button>
+      <textarea id="errorHolder"  readonly></textarea>
+    </div>
+    <div class="yellow" id="scrollSection" onscroll="scrollMe()">
+      <aside>5</aside>
+      <p>Click kitten to start rotating. <br>Scroll section to fade.</p>
+      <img id="kittenRotate" onclick="rotateByX()" src="http://placekitten.com/200/200">
+    </div>
+
+    <img id="firstTask" src="http://campinggenius.com/wp-content/uploads/2015/04/number-one-1.png">
+
+
+    <!-- build:js scripts/main.js -->
+    <script src="main.js"></script>
+    <!-- endbuild -->
+  </body>
+
+</html>

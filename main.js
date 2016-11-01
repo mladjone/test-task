@@ -61,9 +61,6 @@ function loadDoc() {
 	    		
 			}
 	    }
-	    else if (xhr.statusText.indexOf('nsresult: "0x805e0006 (<unknown>)"') > -1){
-	    	document.getElementById("listParent").innerHTML = "Mixed Content: The page at 'https://mladjone.github.io/test-task/' was loaded over HTTPS, but requested an insecure image 'http://placekitten.com/200/200'. This content should also be served over HTTPS.";
-	    }
 	};
 	xhttp.open("GET", "http://jsonplaceholder.typicode.com/photos", true);
 	xhttp.send();

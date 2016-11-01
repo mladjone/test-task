@@ -61,14 +61,11 @@ function loadDoc() {
 	    		
 			}
 	    }
-	    else if{this.status == "(blocked:mixed-content)"}{
+	    else if(this.status == "(blocked:mixed-content)"){
 	    	document.getElementById("listParent").innerHTML = "Mixed Content: The page at 'https://mladjone.github.io/test-task/' was loaded over HTTPS, but requested an insecure image 'http://placekitten.com/200/200'. This content should also be served over HTTPS.";
 	    }
-	    else{
-	    	document.getElementById("listParent").innerHTML = "Error in fetching json data";
-	    }
 	};
-	xhttp.open("GET", "https://jsonplaceholder.typicode.com/photos", true);
+	xhttp.open("GET", "http://jsonplaceholder.typicode.com/photos", true);
 	xhttp.send();
 }
 

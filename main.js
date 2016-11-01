@@ -61,7 +61,7 @@ function loadDoc() {
 	    		
 			}
 	    }
-	    else if(this.status == "(blocked:mixed-content)"){
+	    else if(this.status == "blocked:mixed-content"){
 	    	document.getElementById("listParent").innerHTML = "Mixed Content: The page at 'https://mladjone.github.io/test-task/' was loaded over HTTPS, but requested an insecure image 'http://placekitten.com/200/200'. This content should also be served over HTTPS.";
 	    }
 	};
